@@ -2,11 +2,15 @@
 This project is a responsive webpage built from a Figma design. It utilizes HTML, SCSS (compiled into minified CSS), JavaScript for implementing a burger menu, and jQuery for phone number masking.
 
 <h2>Features</h2>
+Features of the project
+
 - Responsive design: The webpage is designed to adapt to different screen sizes and devices, providing an optimal viewing experience for users.
 - Burger menu: The burger menu allows users to access the navigation links on smaller screens. Clicking the burger icon toggles the display of the menu.
 - Phone number masking: The jQuery library is used to apply a mask to the phone number input field, ensuring consistent formatting of phone numbers as users type.
 
 <h2>Technologies Used</h2>
+Technologies  that were used:
+
 - HTML: The structure of the webpage is built using HTML, providing the foundation for the content and layout.
 - SCSS: The SCSS preprocessor is used to write more maintainable and modular CSS code, which is then compiled into minified CSS.
 - JavaScript: JavaScript is used to implement the burger menu functionality, allowing users to toggle the display of the navigation menu.
