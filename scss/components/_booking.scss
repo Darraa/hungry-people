@@ -1,0 +1,60 @@
+.booking{
+    position: relative;
+    @include fullScreen();
+    @include flexbox($jc: center, $ai: center);
+
+    &__content{
+        @include flexbox($jc: space-evenly, $ai: center);
+
+        &-img{
+            width: 30%;
+        }
+        &-form{
+            @include flexbox($dir: column, $ai: center);
+            width: 50%;
+            gap: 20px;
+
+            div{
+                @include flexbox();
+            }
+
+            button{
+                background: $yellow;
+                border: transparent;
+                width: 98%;
+            }
+        }
+    }
+    &__info{
+        color: $gray;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .booking{
+        text-align: center;
+        &__content{
+            &-img {
+                display: none;
+            }
+        }
+
+        &__info{
+            span{
+                font-size: calc(7px + 5 *(100vw / 1280));
+                padding: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .booking{
+        &__content{
+            &-form{
+                width: 80%;
+            }
+        }
+    }
+}
+

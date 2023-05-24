@@ -1,0 +1,75 @@
+.contact{
+    @include fullScreen();
+    @include flexbox($dir: column, $jc: center, $ai: center, $wrap: nowrap);
+    gap: 3.125rem;
+
+    &__container{
+        width: 80%;
+        @include flexbox();
+        &-form{
+            input{
+                width: 25%;
+            }
+
+            textarea{
+                width: 80%;
+                resize: none;
+            }
+
+            button{
+                background-color: $yellow;
+            }
+        }
+        &-item{
+            @include flexbox($jc:center,$ai: center);
+            gap: 20px;
+            .list{
+                &__item{
+                    @include flexbox();
+                    gap: 10px;
+                    color: $gray;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 935px) {
+    .contact{
+        &__text{
+            width: 90%;
+        }
+
+        &__container{
+            &-form{
+                textarea{
+                    width: 83%;
+                }
+            }
+
+            &-item{
+                .list{
+                    &__item{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .contact{
+        &__container{
+            &-form{
+                width: 100%;
+                align-items: center;
+                flex-direction: column;
+                input, 
+                textarea{
+                    width: 90%;
+                }
+            }
+        }
+    }
+}

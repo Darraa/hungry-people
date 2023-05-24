@@ -1,0 +1,41 @@
+.specialists {
+    position: relative;
+    @include fullScreen();
+    @include flexbox($dir: column, $jc: center, $ai: center);
+    background-image: $gradient, url("../../img/specialists-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    gap: 3.125rem;
+    color: $white;
+
+    &__content {
+        @include flexbox($jc: space-evenly, $ai: center);
+
+        &-img {
+            width: 30%;
+        }
+
+        &-text {
+            p {
+                opacity: .7;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .specialists{
+        &__content{
+
+            flex-direction: column;
+            &-text{
+                width: 80%;
+            }
+            
+            &-img {
+                width: 40%;
+            }
+        }
+    }
+}

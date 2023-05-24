@@ -1,0 +1,121 @@
+.burger {
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+
+    span {
+        height: 2px;
+        width: 80%;
+        transform: scale(1);
+        background-color: $yellow;
+    }
+
+    &__list{
+        display: none;
+    }
+}
+
+.open {
+    display: flex !important;
+}
+
+.burger::before,
+.burger::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: $yellow;
+    transition: all 0.3s ease 0s;
+}
+
+.burger::before {
+    top: 0;
+}
+
+.burger::after {
+    bottom: 0;
+}
+
+.burger.active span {
+    transform: scale(0);
+}
+
+.burger.active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+}
+
+.burger__hide {
+    display: none
+}
+
+@media (max-width: 935px) {
+    .burger {
+        display: flex;
+    
+        &__nav {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10%;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+            overflow-y: auto;
+            background-color: $burger;
+            animation: burgerAnimation 0.4s;
+            
+            &-list {
+                @include flexbox($dir: column, $ai: center);
+                gap: 1rem;
+                background-color: $yellow;
+                border-radius: 1rem;
+                width: 50%;
+                padding: 10px;
+                a{
+
+                    font-weight: $fwbold;
+                    color: $white;
+                    cursor: pointer;
+    
+                    &:hover{
+                        opacity: .3;
+                        transition: .5s;
+                    }
+                }
+
+                details{
+                    font-weight: $fwbold;
+                    color: $white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    @keyframes burgerAnimation {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+}

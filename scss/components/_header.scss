@@ -1,0 +1,48 @@
+@import "./burger";
+.header{
+    position: absolute;
+    z-index: 2;
+    @include flexbox($jc: center);
+    gap: 5rem;
+    width: 100%;
+    padding-top: 25px;
+
+    &__logo{
+        width: 10%
+    }
+
+    &__nav{
+        &-list{
+            @include flexbox();
+            gap: 5rem;
+
+            a{
+                font-weight: $fwbold;
+                color: $white;
+                cursor: pointer;
+
+                &:hover{
+                    opacity: .3;
+                    transition: .5s;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 935px) {
+    .header{
+        @include flexbox($jc: space-around, $ai: center);
+        &__nav{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header{
+        &__logo{
+            width: 15%;
+        }
+    }
+}

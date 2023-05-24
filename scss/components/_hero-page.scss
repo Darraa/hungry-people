@@ -1,0 +1,64 @@
+.hero-page {
+    position: relative;
+    background-image: $gradient, url("../../img/header-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    @include fullScreen();
+    @include flexbox($jc: space-around, $ai: center);
+
+    &__text {
+        writing-mode: vertical-rl;
+        rotate: 180deg;
+        color: $white;
+        font-weight: $fwbold;
+    }
+
+    &__main {
+        margin-top: 10%;
+        @include flexbox($dir: column, $ai: center);
+        gap: 1.875rem;
+        &-title {
+            text-align: center;
+        }
+        &-btn {
+            @include flexbox($jc: center);
+            gap: 2.5rem;
+            button {
+                width: 200px;
+            }
+        }
+    }
+
+    &__social{
+        &-list{
+            @include flexbox($dir:column);
+            gap: 20px;
+
+            li{
+                padding: 5px;
+                width: 50px;
+                height: 50px;
+                border: 1px solid #ffffff45;
+                border-radius: 50%;
+                cursor: pointer;
+                @include flexbox($ai: center, $jc: center);
+
+                &:hover{
+                    opacity: .5;
+                    transition: .5s;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 935px) {
+    .hero-page{
+        &__text,
+        &__social{
+            display: none;
+        }
+    }
+}
