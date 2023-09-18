@@ -2,458 +2,441 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="image/png" sizes="16x16" rel="icon" href="./img/icon.png">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./js/masked-phone.js"></script>
-    <link rel="stylesheet" href="./css/style.min.css">
-    <title>Hungry People</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link type="image/png" sizes="16x16" rel="icon" href="./img/icon.png">
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="./js/masked-phone.js"></script>
+   <link rel="stylesheet" href="./css/style.min.css">
+   <title>Hungry People</title>
 </head>
 
 <body>
-    <header class="header">
-            <nav class="header__nav">
-                <ul class="header__nav-list">
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#team">TEAM</a></li>
-                    <li><a href="#booking">BOOKING</a></li>
-                </ul>
-            </nav>
-        <div class="header__logo">
-            <div class="img-container">
-                <img src="./img/logo.png" alt="logo">
-            </div>
-        </div>
-            <nav class="header__nav">
-                <ul class="header__nav-list">
-                    <li><a href="#menu">MENU</a></li>
-                    <li><a href="#galerie">GALERIE</a></li>
-                    <li><a href="#events">EVENTS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-            </nav>
+   <header class="header">
+      <nav class="header__nav">
+         <ul class="header__nav-list">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#team">TEAM</a></li>
+            <li><a href="#booking">BOOKING</a></li>
+         </ul>
+      </nav>
+      <div class="header__logo">
+         <div class="img-container">
+            <img src="./img/logo.png" alt="logo">
+         </div>
+      </div>
+      <nav class="header__nav">
+         <ul class="header__nav-list">
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#galerie">GALERIE</a></li>
+            <li><a href="#events">EVENTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+         </ul>
+      </nav>
 
-        <div class="burger">
-            <span></span>
-            <div class="burger__nav">
-                <ul class="burger__nav-list">
-                    <li><a href="#home">HOME</a></li>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#team">TEAM</a></li>
-                        <li><a href="#booking">BOOKING</a></li>
-                        <li><a href="#menu">MENU</a></li>
-                        <li><a href="#galerie">GALERIE</a></li>
-                        <li><a href="#events">EVENTS</a></li>
+      <div class="burger">
+         <span></span>
+         <div class="burger__nav">
+            <ul class="burger__nav-list">
+               <li><a href="#home">HOME</a></li>
+               <li><a href="#about">ABOUT</a></li>
+               <li><a href="#team">TEAM</a></li>
+               <li><a href="#booking">BOOKING</a></li>
+               <li><a href="#menu">MENU</a></li>
+               <li><a href="#galerie">GALERIE</a></li>
+               <li><a href="#events">EVENTS</a></li>
+               <li>
+                  <details class="details">
+                     <summary>CONTACT</summary>
+                     <ul class="list__item">
                         <li>
-                            <details class="details">
-                                <summary>CONTACT</summary>
-                                <ul class="list__item">
-                                    <li>
-                                        <span>5th London Boulevard, U.K.</span>
-                                    </li>
-                                    <li>
-                                        <span>+40 729 131 637/+40 726 458 782</span>
-                                    </li>
-                                    <li>
-                                        <span>office@mindblister.com</span>
-                                    </li>
-                                </ul>
-                            </details>
-                        </li>
-                </ul>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <section class="hero-page" id="home">
-            <div class="hero-page__text">
-                <span>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</span>
-            </div>
-
-            <div class="hero-page__main">
-                <div class="hero-page__main-title">
-                    <span class="title">RESTAURANT</span>
-                    <h1>hungry people</h1>
-                    <hr>
-                </div>
-                <div class="hero-page__main-btn">
-                    <button>BOOK TABLE</button>
-                    <button>EXPLORE</button>
-                </div>
-            </div>
-
-            <div class="hero-page__social">
-                <ul class="hero-page__social-list">
-                    <li>
-                        <a href="https://uk-ua.facebook.com/" target="_blank">
-                            <svg class="svg-social" width="25" height="25">
-                                <use xlink:href="./img/social-sprite.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/?lang=uk" target="_blank">
-                            <svg class="svg-social" width="25" height="25">
-                                <use xlink:href="./img/social-sprite.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/ " target="_blank">
-                            <svg class="svg-social" width="25" height="25">
-                                <use xlink:href="./img/social-sprite.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="about" id="about">
-            <div class="about__text text">
-                <h2>about us</h2>
-                <hr>
-                <p>
-                    <b>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a,
-                        tempor magna.
-                    </b><br><br>
-
-                    Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula.
-                    Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem.
-                    Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
-                </p>
-            </div>
-
-            <div class="about__img">
-                <div class="about__img-container img-container">
-                    <img src="./img/about-img.png" alt="about">
-                </div>
-                <div class="square-right"></div>
-            </div>
-        </section>
-
-        <section class="specialists" id="team">
-            <div class="specialists__title">
-                <span class="title">OUR TEAM</span>
-            </div>
-
-            <div class="specialists__content">
-                <div class="specialists__content-img img">
-                    <div class="img__content img-container">
-                        <img src="./img/chef.png" alt="chef">
-                    </div>
-                    <div class="square-left"></div>
-                </div>
-
-                <div class="specialists__content-text text">
-                    <h2>MASTER CHEF</h2>
-                    <hr>
-                    <p>
-                        <b>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est
-                            a,
-                            tempor magna.
-                        </b><br><br>
-
-                        Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
-                        ligula.
-                        Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec
-                        sem.
-                        Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="booking" id="booking">
-            <div class="booking__content">
-                <div class="booking__content-form">
-                    <h2>book a table</h2>
-                    <hr>
-
-                    <form>
-                        <input type="text" placeholder="Name" id="name">
-                        <input type="email" placeholder="Email" id="mail">
-                        <input type="tel" placeholder="Phone" id="phone">
-                        <select name="people" id="people" >
-                            <option disabled="disabled" selected="selected">
-                                People</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                        <input type="text" placeholder="Date (mm/dd)" id="date">
-                        <select name="time" id="time" >
-                            <option disabled="disabled" selected="selected">
-                                Time</option>
-                            <option value="1">12:00</option>
-                            <option value="2">14:00</option>
-                            <option value="3">16:00</option>
-                            <option value="4">18:00</option>
-                        </select>
-                    </form>
-                    <button type="submit">BOOK NOW</button>
-                </div>
-                <div class="booking__content-img img">
-                    <div class="img__content img-container">
-                        <img src="./img/booking-img.png" alt="booking">
-                    </div>
-                    <div class="square-right"></div>
-                </div>
-            </div>
-
-            <div class="booking__info"> 
-                <span>Mon - Fri: <b>8PM - 10PM</b>, Sat - Sun: <b>8PM - 3AM</b>, Phone: <b>+40 729 131 637/+40 726 458
-                        782</b></span>
-            </div>
-        </section>
-
-        <section class="galerie" id="galerie">
-            <div class="galerie__title">
-                <span class="title">specialties</span>
-            </div>
-
-            <div class="galerie__content">
-                <div class="galerie__content-img img">
-                    <div class="img__content img-container">
-                        <img src="./img/pancakes.png" alt="pancakes">
-                    </div>
-                    <div class="square-left"></div>
-                </div>
-
-                <div class="galerie__content-text text">
-                    <h2>chocolate pancakes</h2>
-                    <hr>
-                    <p>
-                        <b>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est
-                            a,
-                            tempor magna.
-                        </b><br><br>
-
-                        Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
-                        ligula.
-                        Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec
-                        sem.
-                        Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="menu" id="menu">
-            <div class="menu__text text">
-                <h2>DELICIOUS MENU</h2>
-                <hr>
-                <p>
-                    <b>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a,
-                        tempor magna.
-                    </b>
-                </p>
-            </div>
-
-            <div class="menu__sort">
-                <ul class="menu__sort-list">
-                    <li>SOUPE</li>
-                    <li>PIZZA</li>
-                    <li>PASTA</li>
-                    <li>DESERT</li>
-                    <li>WINE</li>
-                    <li>BEER</li>
-                    <li>DRINKS</li>
-                </ul>
-            </div>
-
-            <div class="menu__position">
-                <div class="menu__position-item menu__list">
-                    <ul class="menu__list-item">
-                        <li>PIZZA QUATRO STAGIONI  . . . .   55,68 USD <br>
-                            <span>Integer ullamcorper neque eu purus euismod</span>
-                        </li>
-                        <li>PIZZA QUATRO STAGIONI  . . . .   55,68 USD <br>
-                            <span>Integer ullamcorper neque eu purus euismod</span>
-                        </li>
-                        <li>PIZZA QUATRO STAGIONI  . . . .   55,68 USD <br>
-                            <span>Integer ullamcorper neque eu purus euismod</span>
-                        </li>
-                        <li>PIZZA QUATRO STAGIONI  . . . .   55,68 USD <br>
-                            <span>Integer ullamcorper neque eu purus euismod</span>
-                        </li>
-                        <li>PIZZA QUATRO STAGIONI  . . . .   55,68 USD <br>
-                            <span>Integer ullamcorper neque eu purus euismod</span>
-                        </li>
-                        <li>PIZZA QUATRO STAGIONI  . . . .   55,68 USD <br>
-                            <span>Integer ullamcorper neque eu purus euismod</span>
-                        </li>
-                        <li>PIZZA QUATRO STAGIONI  . . . .   55,68 USD <br>
-                            <span>Integer ullamcorper neque eu purus euismod</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="menu__position-item menu__list">
-                    <ul class="menu__list-item">
-                        <li>PIZZA QUATRO STAGIONI  . . . .   55,68 USD <br>
-                            <span>Integer ullamcorper neque eu purus euismod</span>
-                        </li>
-                        <li>PIZZA QUATRO STAGIONI  . . . .   55,68 USD <br>
-                            <span>Integer ullamcorper neque eu purus euismod</span>
-                        </li>
-                        <li>PIZZA QUATRO STAGIONI  . . . .   55,68 USD <br>
-                            <span>Integer ullamcorper neque eu purus euismod</span>
-                        </li>
-                        <li>PIZZA QUATRO STAGIONI  . . . .   55,68 USD <br>
-                            <span>Integer ullamcorper neque eu purus euismod</span>
-                        </li>
-                        <li>PIZZA QUATRO STAGIONI  . . . .   55,68 USD <br>
-                            <span>Integer ullamcorper neque eu purus euismod</span>
-                        </li>
-                        <li>PIZZA QUATRO STAGIONI  . . . .   55,68 USD <br>
-                            <span>Integer ullamcorper neque eu purus euismod</span>
-                        </li>
-                        <li>PIZZA QUATRO STAGIONI  . . . .   55,68 USD <br>
-                            <span>Integer ullamcorper neque eu purus euismod</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="menu__position-item menu__list">
-                    <ul class="menu__list-item">
-                        <li>PIZZA QUATRO STAGIONI  . . . .   55,68 USD <br>
-                            <span>Integer ullamcorper neque eu purus euismod</span>
-                        </li>
-                        <li>PIZZA QUATRO STAGIONI  . . . .   55,68 USD <br>
-                            <span>Integer ullamcorper neque eu purus euismod</span>
-                        </li>
-                        <li>PIZZA QUATRO STAGIONI  . . . .   55,68 USD <br>
-                            <span>Integer ullamcorper neque eu purus euismod</span>
-                        </li>
-                        <li>PIZZA QUATRO STAGIONI  . . . .   55,68 USD <br>
-                            <span>Integer ullamcorper neque eu purus euismod</span>
-                        </li>
-                        <li>PIZZA QUATRO STAGIONI  . . . .   55,68 USD <br>
-                            <span>Integer ullamcorper neque eu purus euismod</span>
-                        </li>
-                        <li>PIZZA QUATRO STAGIONI  . . . .   55,68 USD <br>
-                            <span>Integer ullamcorper neque eu purus euismod</span>
-                        </li>
-                        <li>PIZZA QUATRO STAGIONI  . . . .   55,68 USD <br>
-                            <span>Integer ullamcorper neque eu purus euismod</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <div class="events" id="events">
-            <div class="events__title">
-                <span class="title">PRIVATE EVENTS</span>
-            </div>
-
-            <div class="events__content">
-                <div class="events__content-img img">
-                    <div class="img__content img-container">
-                        <img src="./img/weddings-event.png" alt="events">
-                    </div>
-                    <div class="img__title">
-                        <span>weddings</span>
-                    </div>
-                    <div class="square-left"></div>
-                </div>
-
-                <div class="events__content-img img">
-                    <div class="img__title">
-                        <span>corporate pzrties</span>
-                    </div>
-                    <div class="img__content img-container">
-                        <img src="./img/corporative-event.png" alt="events">
-                    </div>
-                    <div class="square-right"></div>
-                </div>
-            </div>
-            <div class="events__info"> 
-                <span>For private events please call: <b>+40 729 131 637/+40 726 458 782</b> or use the contact form.</span>
-            </div>
-        </div>
-
-        <div class="img__wrapper">
-            <div class="img-container">
-                <img src="./img/img-1.png" alt="photos">
-            </div>
-            <div class="img-container">
-                <img src="./img/img-2.png" alt="photos">
-            </div>
-            <div class="img-container">
-                <img src="./img/img-3.png" alt="photos">
-            </div>
-            <div class="img-container">
-                <img src="./img/img-4.png" alt="photos">
-            </div>
-        </div>
-
-        <section class="contact">
-            <div class="contact__text text">
-                <h2>CONTACT</h2>
-                <hr>
-                <p>
-                    <b>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a,
-                        tempor magna.
-                    </b>
-                </p>
-            </div>
-
-            <div class="contact__container">
-                <form class="contact__container-form">
-                    <input type="text" placeholder="Name" id="name-contact">
-                    <input type="email" placeholder="Email" id="mail-contact">
-                    <input type="tel" placeholder="Phone" id="phone-contact">
-
-                    <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
-                
-                <div class="contact__container-item list">
-                    <ul class="list__item">
-                        <li>
-                            <svg width="15" height="15">
-                                <use xlink:href="./img/contact-sprite.svg#icon-location"></use>
-                            </svg>
-                            <span>5th London Boulevard, U.K.</span>
+                           <span>5th London Boulevard, U.K.</span>
                         </li>
                         <li>
-                            <svg width="15" height="15">
-                                <use xlink:href="./img/contact-sprite.svg#icon-phone"></use>
-                            </svg>
-                            <span>+40 729 131 637/+40 726 458 782</span>
+                           <span>+40 729 131 637/+40 726 458 782</span>
                         </li>
                         <li>
-                            <svg width="15" height="15">
-                                <use xlink:href="./img/contact-sprite.svg#icon-envelop"></use>
-                            </svg>
-                            <span>office@mindblister.com</span>
+                           <span>office@mindblister.com</span>
                         </li>
-                    </ul>
+                     </ul>
+                  </details>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </header>
 
-                    <div>
-                        <button type="submit">SEND MESSAGE</button>
-                    </div>
-                </div>
+   <main>
+      <section class="hero-page" id="home">
+         <div class="hero-page__text">
+            <span>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</span>
+         </div>
+
+         <div class="hero-page__main">
+            <div class="hero-page__main-title">
+               <span class="title">RESTAURANT</span>
+               <h1>hungry people</h1>
+               <hr>
+            </div>
+            <div class="hero-page__main-btn">
+               <button>BOOK TABLE</button>
+               <button>EXPLORE</button>
+            </div>
+         </div>
+
+         <div class="hero-page__social">
+            <ul class="hero-page__social-list">
+               <li>
+                  <a href="https://uk-ua.facebook.com/" target="_blank">
+                     <svg class="svg-social" width="25" height="25">
+                        <use xlink:href="./img/social-sprite.svg#icon-facebook"></use>
+                     </svg>
+                  </a>
+               </li>
+               <li>
+                  <a href="https://twitter.com/?lang=uk" target="_blank">
+                     <svg class="svg-social" width="25" height="25">
+                        <use xlink:href="./img/social-sprite.svg#icon-twitter"></use>
+                     </svg>
+                  </a>
+               </li>
+               <li>
+                  <a href="https://www.instagram.com/ " target="_blank">
+                     <svg class="svg-social" width="25" height="25">
+                        <use xlink:href="./img/social-sprite.svg#icon-instagram"></use>
+                     </svg>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </section>
+
+      <section class="about" id="about">
+         <div class="about__text text">
+            <h2>about us</h2>
+            <hr>
+            <p>
+               <b>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a,
+                  tempor magna.
+               </b><br><br>
+
+               Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula.
+               Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem.
+               Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+            </p>
+         </div>
+
+         <div class="about__img">
+            <div class="about__img-container img-container">
+               <img src="./img/about-img.png" alt="about">
+            </div>
+            <!-- <div class="square-right"></div> -->
+         </div>
+      </section>
+
+      <section class="specialists" id="team">
+         <div class="specialists__title">
+            <span class="title">OUR TEAM</span>
+         </div>
+
+         <div class="specialists__content">
+            <div class="specialists__content-img img">
+               <div class="img__content img-container">
+                  <img src="./img/chef.png" alt="chef">
+               </div>
+            </div>
+
+            <div class="specialists__content-text text">
+               <h2>MASTER CHEF</h2>
+               <hr>
+               <p>
+                  <b>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est
+                     a,
+                     tempor magna.
+                  </b><br><br>
+
+                  Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
+                  ligula.
+                  Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec
+                  sem.
+                  Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+               </p>
+            </div>
+         </div>
+      </section>
+
+      <section class="booking" id="booking">
+         <div class="booking__content">
+            <div class="booking__content-form">
+               <h2>book a table</h2>
+               <hr>
+
+               <form>
+                  <input type="text" placeholder="Name" id="name">
+                  <input type="email" placeholder="Email" id="mail">
+                  <input type="tel" placeholder="Phone" id="phone">
+                  <input type="text" placeholder="People" id="people">
+                  <input type="text" placeholder="Date (mm/dd)" id="date">
+                  <input type="text" placeholder="Time" id="time">
+               </form>
+               <button type="submit">BOOK NOW</button>
+            </div>
+            <div class="booking__content-img img">
+               <div class="img__content img-container">
+                  <img src="./img/booking-img.png" alt="booking">
+               </div>
+            </div>
+         </div>
+
+         <div class="booking__info">
+            <span>Mon - Fri: <b>8PM - 10PM</b>, Sat - Sun: <b>8PM - 3AM</b>, Phone: <b>+40 729 131 637/+40 726 458
+                  782</b></span>
+         </div>
+      </section>
+
+      <section class="galerie" id="galerie">
+         <div class="galerie__title">
+            <span class="title">specialties</span>
+         </div>
+
+         <div class="galerie__content">
+            <div class="galerie__content-img img">
+               <div class="img__content img-container">
+                  <img src="./img/pancakes.png" alt="pancakes">
+               </div>
+            </div>
+
+            <div class="galerie__content-text text">
+               <h2>chocolate pancakes</h2>
+               <hr>
+               <p>
+                  <b>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est
+                     a,
+                     tempor magna.
+                  </b><br><br>
+
+                  Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
+                  ligula.
+                  Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec
+                  sem.
+                  Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+               </p>
+            </div>
+         </div>
+      </section>
+
+      <section class="menu" id="menu">
+         <div class="menu__text text">
+            <h2>DELICIOUS MENU</h2>
+            <hr>
+            <p>
+               <b>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a,
+                  tempor magna.
+               </b>
+            </p>
+         </div>
+
+         <div class="menu__sort">
+            <ul class="menu__sort-list">
+               <li>SOUPE</li>
+               <li>PIZZA</li>
+               <li>PASTA</li>
+               <li>DESERT</li>
+               <li>WINE</li>
+               <li>BEER</li>
+               <li>DRINKS</li>
+            </ul>
+         </div>
+
+         <div class="menu__position">
+            <div class="menu__position-item menu__list">
+               <ul class="menu__list-item">
+                  <li>PIZZA QUATRO STAGIONI . . . . 55,68 USD <br>
+                     <span>Integer ullamcorper neque eu purus euismod</span>
+                  </li>
+                  <li>PIZZA QUATRO STAGIONI . . . . 55,68 USD <br>
+                     <span>Integer ullamcorper neque eu purus euismod</span>
+                  </li>
+                  <li>PIZZA QUATRO STAGIONI . . . . 55,68 USD <br>
+                     <span>Integer ullamcorper neque eu purus euismod</span>
+                  </li>
+                  <li>PIZZA QUATRO STAGIONI . . . . 55,68 USD <br>
+                     <span>Integer ullamcorper neque eu purus euismod</span>
+                  </li>
+                  <li>PIZZA QUATRO STAGIONI . . . . 55,68 USD <br>
+                     <span>Integer ullamcorper neque eu purus euismod</span>
+                  </li>
+                  <li>PIZZA QUATRO STAGIONI . . . . 55,68 USD <br>
+                     <span>Integer ullamcorper neque eu purus euismod</span>
+                  </li>
+                  <li>PIZZA QUATRO STAGIONI . . . . 55,68 USD <br>
+                     <span>Integer ullamcorper neque eu purus euismod</span>
+                  </li>
+               </ul>
+            </div>
+            <div class="menu__position-item menu__list">
+               <ul class="menu__list-item">
+                  <li>PIZZA QUATRO STAGIONI . . . . 55,68 USD <br>
+                     <span>Integer ullamcorper neque eu purus euismod</span>
+                  </li>
+                  <li>PIZZA QUATRO STAGIONI . . . . 55,68 USD <br>
+                     <span>Integer ullamcorper neque eu purus euismod</span>
+                  </li>
+                  <li>PIZZA QUATRO STAGIONI . . . . 55,68 USD <br>
+                     <span>Integer ullamcorper neque eu purus euismod</span>
+                  </li>
+                  <li>PIZZA QUATRO STAGIONI . . . . 55,68 USD <br>
+                     <span>Integer ullamcorper neque eu purus euismod</span>
+                  </li>
+                  <li>PIZZA QUATRO STAGIONI . . . . 55,68 USD <br>
+                     <span>Integer ullamcorper neque eu purus euismod</span>
+                  </li>
+                  <li>PIZZA QUATRO STAGIONI . . . . 55,68 USD <br>
+                     <span>Integer ullamcorper neque eu purus euismod</span>
+                  </li>
+                  <li>PIZZA QUATRO STAGIONI . . . . 55,68 USD <br>
+                     <span>Integer ullamcorper neque eu purus euismod</span>
+                  </li>
+               </ul>
+            </div>
+            <div class="menu__position-item menu__list">
+               <ul class="menu__list-item">
+                  <li>PIZZA QUATRO STAGIONI . . . . 55,68 USD <br>
+                     <span>Integer ullamcorper neque eu purus euismod</span>
+                  </li>
+                  <li>PIZZA QUATRO STAGIONI . . . . 55,68 USD <br>
+                     <span>Integer ullamcorper neque eu purus euismod</span>
+                  </li>
+                  <li>PIZZA QUATRO STAGIONI . . . . 55,68 USD <br>
+                     <span>Integer ullamcorper neque eu purus euismod</span>
+                  </li>
+                  <li>PIZZA QUATRO STAGIONI . . . . 55,68 USD <br>
+                     <span>Integer ullamcorper neque eu purus euismod</span>
+                  </li>
+                  <li>PIZZA QUATRO STAGIONI . . . . 55,68 USD <br>
+                     <span>Integer ullamcorper neque eu purus euismod</span>
+                  </li>
+                  <li>PIZZA QUATRO STAGIONI . . . . 55,68 USD <br>
+                     <span>Integer ullamcorper neque eu purus euismod</span>
+                  </li>
+                  <li>PIZZA QUATRO STAGIONI . . . . 55,68 USD <br>
+                     <span>Integer ullamcorper neque eu purus euismod</span>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </section>
+
+      <div class="events" id="events">
+         <div class="events__title">
+            <span class="title">PRIVATE EVENTS</span>
+         </div>
+
+         <div class="events__content">
+            <div class="events__content-img img">
+               <div class="img__content img-container">
+                  <img src="./img/weddings-event.png" alt="events">
+               </div>
+            </div>
+
+            <div class="events__content-img img">
+               <div class="img__content img-container">
+                  <img src="./img/corporative-event.png" alt="events">
+               </div>
+            </div>
+         </div>
+         <div class="events__info">
+            <span>For private events please call: <b>+40 729 131 637/+40 726 458 782</b> or use the contact form.</span>
+         </div>
+      </div>
+
+      <div class="img__wrapper">
+         <div class="img__wrapper-item">
+            <div class="img-container">
+               <img src="./img/img-1.png" alt="photos">
+            </div>
+         </div>
+         <div class="img__wrapper-item">
+            <div class="img-container">
+               <img src="./img/img-2.png" alt="photos">
+            </div>
+         </div>
+         <div class="img__wrapper-item">
+            <div class="img-container">
+               <img src="./img/img-3.png" alt="photos">
+            </div>
+         </div>
+         <div class="img__wrapper-item">
+            <div class="img-container">
+               <img src="./img/img-4.png" alt="photos">
+            </div>
+         </div>
+      </div>
+
+      <section class="contact">
+         <div class="contact__text text">
+            <h2>CONTACT</h2>
+            <hr>
+            <p>
+               <b>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a,
+                  tempor magna.
+               </b>
+            </p>
+         </div>
+
+         <div class="contact__container">
+            <form class="contact__container-form">
+               <input type="text" placeholder="Name" id="name-contact">
+               <input type="email" placeholder="Email" id="mail-contact">
+               <input type="tel" placeholder="Phone" id="phone-contact">
+
+               <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+
+               <div class="contact__container-item list">
+                  <ul class="list__item">
+                     <li>
+                        <svg width="15" height="15">
+                           <use xlink:href="./img/contact-sprite.svg#icon-location"></use>
+                        </svg>
+                        <span>5th London Boulevard, U.K.</span>
+                     </li>
+                     <li>
+                        <svg width="15" height="15">
+                           <use xlink:href="./img/contact-sprite.svg#icon-phone"></use>
+                        </svg>
+                        <span>+40 729 131 637/+40 726 458 782</span>
+                     </li>
+                     <li>
+                        <svg width="15" height="15">
+                           <use xlink:href="./img/contact-sprite.svg#icon-envelop"></use>
+                        </svg>
+                        <span>office@mindblister.com</span>
+                     </li>
+                  </ul>
+
+                  <div>
+                     <button type="submit">SEND MESSAGE</button>
+                  </div>
+               </div>
             </form>
-            </div>
-        </section>
+         </div>
+      </section>
 
-        <div class="map"></div>
-    </main>
+      <div class="map"></div>
+   </main>
 
-    <footer>
-        <span>© Copyright <b>Mindblister</b>  2019</span>
-    </footer>
+   <footer>
+      <span>© Copyright <b>Mindblister</b> 2019</span>
+   </footer>
 
-    <script src="./js/script.js" defer></script>
+   <script src="./js/script.js" defer></script>
 </body>
 
 </html>

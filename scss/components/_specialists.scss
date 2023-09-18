@@ -1,6 +1,6 @@
 .specialists {
-    position: relative;
-    @include fullScreen();
+    width: 100%;
+    padding: 5% 0;
     @include flexbox($dir: column, $jc: center, $ai: center);
     background-image: $gradient, url("../../img/specialists-bg.png");
     background-repeat: no-repeat;
@@ -13,7 +13,7 @@
         @include flexbox($jc: space-evenly, $ai: center);
 
         &-img {
-            width: 30%;
+            width: 40%;
         }
 
         &-text {
@@ -25,16 +25,23 @@
 }
 
 @media screen and (max-width: 800px) {
-    .specialists{
-        &__content{
+    .specialists {
+        &__content {
 
             flex-direction: column;
-            &-text{
+
+            &-text {
                 width: 80%;
             }
-            
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .specialists {
+        &__content {
             &-img {
-                width: 40%;
+                width: 70%;
             }
         }
     }

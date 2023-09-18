@@ -1,6 +1,6 @@
 .galerie {
-    position: relative;
-    @include fullScreen();
+    width: 100%;
+    padding: 5% 0;
     @include flexbox($dir: column, $jc: center, $ai: center);
     background-image: $gradient, url("../../img/galerie-bg.png");
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@
     &__content{
         @include flexbox($jc: space-evenly, $ai: center);
         &-img {
-            width: 30%;
+            width: 40%;
         }
         &-text{
             p{
@@ -25,14 +25,19 @@
 @media screen and (max-width: 800px) {
     .galerie{
         &__content{
-
             flex-direction: column;
             &-text{
                 width: 80%;
             }
-            
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .galerie{
+        &__content{
             &-img {
-                width: 40%;
+                width: 70%;
             }
         }
     }

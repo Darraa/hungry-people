@@ -1,27 +1,22 @@
-.booking{
-    position: relative;
-    @include fullScreen();
+.booking{   
+    width: 100%;
+    padding: 5% 0;
     @include flexbox($jc: center, $ai: center);
 
     &__content{
         @include flexbox($jc: space-evenly, $ai: center);
 
         &-img{
-            width: 30%;
+            width: 40%;
         }
         &-form{
-            @include flexbox($dir: column, $ai: center);
+            @include flexbox($dir: column, $ai: center, );
             width: 50%;
             gap: 20px;
-
-            div{
-                @include flexbox();
-            }
 
             button{
                 background: $yellow;
                 border: transparent;
-                width: 98%;
             }
         }
     }

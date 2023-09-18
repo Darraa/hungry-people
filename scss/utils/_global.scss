@@ -33,7 +33,7 @@ hr {
 form{
     @include flexbox($jc: center);
     gap: 10px;
-    input, select, textarea{
+    input, textarea{
         background: $colorinp;
         border-radius: 5px;
         font-family: 'Open Sans', sans-serif;
@@ -44,12 +44,6 @@ form{
         &:focus{
             border-color: $yellow;
         }
-    }
-
-    select{
-        width: 48%;
-        color: rgba(51, 51, 51, 0.65);
-        appearance: none;
     }
 }
 
@@ -91,15 +85,6 @@ button {
     fill: $white;
 }
 
-.square-right {
-    @include square();
-    margin: 15% 2% 0%;
-    right: 0;
-}
-.square-left {
-    @include square();
-    margin: 15% 0% 0% -4%;
-}
 
 .text {
     text-align: center;
@@ -118,7 +103,10 @@ button {
 .img__wrapper{
     width: 100%;
     background-color: #000;
-    @include flexbox($jc: space-between);
+    @include flexbox();
+    &-item{
+        width: 25%;
+    }
 }
 
 .map{
@@ -129,11 +117,6 @@ button {
 }
 
 @media screen and (max-width: 935px) {
-    .square-left,
-    .square-right{
-        display: none;
-    }
-
     .img__wrapper{
         justify-content: center;
     }

@@ -1,5 +1,6 @@
 .contact{
-    @include fullScreen();
+    width: 100%;
+    padding: 5% 0;
     @include flexbox($dir: column, $jc: center, $ai: center, $wrap: nowrap);
     gap: 3.125rem;
 

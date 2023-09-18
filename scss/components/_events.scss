@@ -1,6 +1,6 @@
 .events{
-    position: relative;
-    @include fullScreen();
+    width: 100%;
+    padding: 5% 0;
     @include flexbox($jc: center, $ai: center);
     background-image: $gradient, url("../../img/galerie-bg.png");
     background-repeat: no-repeat;
@@ -14,24 +14,7 @@
         @include flexbox($jc: space-around);
 
         &-img{
-            @include flexbox();
-        }
-
-        .img{
-            &__title{
-                writing-mode: vertical-rl;
-                rotate: 180deg;
-                background-color: #000;
-                border-radius: 0px 5px 5px 0px;
-                padding: 20px;
-
-                span{
-                color: $white;
-                font-family: 'MainTitle';
-                text-transform: $tt;
-                font-size: $fstitle;
-                }
-            }
+            width: 50%;
         }
     }
 
@@ -42,21 +25,8 @@
 
 @media screen and (max-width: 1100px) {
     .events{
-        gap: 2rem;
-        &__content{
-            &-img {
-                width: 40%;
-
-                .img{
-                    &__title{
-                        writing-mode: horizontal-tb;
-                        rotate: 0deg;
-                        padding: 10px;
-                    }
-                }
-            }
-        }
         &__info{
+            text-align: center;
             span{
                 font-size: calc(7px + 5 *(100vw / 1280));
                 padding: 5px;
@@ -70,6 +40,10 @@
         &__content{
             flex-direction: column;
             align-items: center;
+
+            &-img{
+                width: 70%;
+            }
         }
     }
 }

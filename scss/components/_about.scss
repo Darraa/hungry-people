@@ -1,25 +1,32 @@
 .about {
-    position: relative;
-    @include fullScreen();
-    @include flexbox($jc: space-evenly, $ai: center);
+    @include flexbox($jc: flex-end, $ai: center);
+    gap: 5rem;
+    width: 100%;
+    padding: 5% 0;
 
     &__img {
-        width: 30%;
-        &-container{
+        width: 40%;
+
+        &-container {
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         }
     }
 }
 
 @media screen and (max-width: 800px) {
-    .about{
+    .about {
         flex-direction: column;
-        &__text{
+        gap: 2rem;
+        &__text {
             width: 80%;
         }
+    }
+}
 
+@media screen and (max-width: 500px) {
+    .about {
         &__img {
-            width: 40%;
+            width: 70%;
         }
     }
 }

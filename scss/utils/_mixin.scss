@@ -10,12 +10,3 @@
     width: $width;
     height: $height;
 }
-
-@mixin square ($top: 0, $pos: absolute, $widthsq: 220px, $heightsq: 220px, $bor: 20px solid $yellow, $filtersq: $filter) {
-    top: $top;
-    position: $pos;
-    width: $widthsq;
-    height: $heightsq;
-    border: $bor;
-    filter: $filtersq;
-}
